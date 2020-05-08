@@ -9,8 +9,8 @@ Control of a robotic arm with 4 degrees of freedom.
   * PROTOBOARD...........x1
   
 ### - CONTROL MODES
-  - With 4 potentiometers, one servo for each potentiometer.
-  - With 2 joysticks, 2 servos for each joystick.
+  - [With 4 potentiometers, one servo for each potentiometer.](./POTENTIOMETER)
+  - [With 2 joysticks, 2 servos for each joystick.](./JOYSTICK)
   
 ### - WIRING DIAGRAM
 ![WIRING_DIAGRAM](WIRING_DIAGRAM.png)

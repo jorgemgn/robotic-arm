@@ -13,4 +13,4 @@ Control of a robotic arm with 4 degrees of freedom.
   - With 2 joysticks, 2 servos for each joystick.
   
 ### - WIRING DIAGRAM
-![WIRING_DIAGRAM]()
+![WIRING_DIAGRAM](WIRING_DIAGRAM.png)

@@ -24,8 +24,7 @@ int VAL02;   // SHOULDER POTENTIOMETER VALUE
 int VAL03;   // ELBOW POTENTIOMETER VALUE
 int VAL04;   // HAND POTENTIOMETER VALUE
 
-void setup()
-{
+void setup () {
   // SERVOS ATTACHS
   BASE.attach(2);      // BASE SERVO ATTACH TO PIN 2
   SHOULDER.attach(4);  // SHOULDER SERVO ATTACH TO PIN 4
@@ -33,7 +32,7 @@ void setup()
   HAND.attach(8);      // HAND SERVO ATTACH TO PIN 8
 }
 
-void loop() {
+void loop () {
   // ANALOG READS
   // Here we read the value of the potentiometer, which ranges from 0 to 1023
   VAL01 = analogRead(POTBASE);

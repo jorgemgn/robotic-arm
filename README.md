@@ -1,16 +1,20 @@
-# ROBOTIC ARM
-Control of a robotic arm with 4 degrees of freedom.
+# Robotic Arm
 
-### - MATERIALS
-  * ARDUINO UNO.................x1
-  * SERVO SG90.......................x4
-  * 10K POTENTIOMETER....x4
-  * 2 AXES JOYSTICK..............x2
-  * PROTOBOARD...................x1
+Control of a robotic arm (allowing four freedom degrees).
+
+### Materials
+
+- 1 x Arduino UNO
+- 1 x Servo SG90
+- 4 x 10K potentiometer
+- 2 x Axes joystick
+- 1 x Protoboard
+
+### Control modes
+
+- [Using two joysticks | 2 x servos per joystick](./JOYSTICK/robotic-arm-joystick.ino)
+- [Using four potentiometers | 1 x servo per potentiometer](./POTENTIOMETER/robotic-arm-potentiometer.ino)
   
-### - CONTROL MODES
-  - [With 4 potentiometers, one servo for each potentiometer.](./POTENTIOMETER)
-  - [With 2 joysticks, 2 servos for each joystick.](./JOYSTICK)
-  
-### - WIRING DIAGRAM
-![WIRING_DIAGRAM](WIRING_DIAGRAM.png)
+### Wiring diagram
+
+![diagram](diagram.png)

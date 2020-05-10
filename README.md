@@ -28,4 +28,4 @@ Control of a robotic arm (allowing four freedom degrees).
   
 ### Wiring diagram
 
-<img src="PICTURES/wiring-diagram.png" width="300"/>
+<img src="PICTURES/wiring-diagram.png" alt="Using four potentiometers" width="300"/>

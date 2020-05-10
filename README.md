@@ -2,20 +2,20 @@
 
 Control of a robotic arm (allowing four freedom degrees).
 
-![robotic-arm](robotic-arm.gif)
+![robotic-arm](PICTURES/robotic-arm.gif)
 
 ### Materials
 
 - 1 x Arduino UNO
-<img src="arduino-uno.jpg" width="100"/>
+<img src="PICTURES/arduino-uno.jpg" width="100"/>
 - 1 x Servo SG90
-<img src="servo-sg90.jpg" width="100"/>
+<img src="PICTURES/servo-sg90.jpg" width="100"/>
 - 4 x 10K potentiometer
-<img src="10kpotentiometer.jpg" width="100"/>
+<img src="PICTURES/10kpotentiometer.jpg" width="100"/>
 - 2 x Axes joystick
-<img src="joystick.jpg" width="100"/>
+<img src="PICTURES/joystick.jpg" width="100"/>
 - 1 x Protoboard
-<img src="protoboard.jpg" width="100"/>
+<img src="PICTURES/protoboard.jpg" width="100"/>
 
 ### Control modes
 
@@ -24,4 +24,4 @@ Control of a robotic arm (allowing four freedom degrees).
   
 ### Wiring diagram
 
-![diagram](diagram.png)
+<img src="PICTURES/wiring-diagram.png" width="300"/>

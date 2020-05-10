@@ -23,8 +23,8 @@ Control of a robotic arm (allowing four freedom degrees).
 
 ### Control modes
 
-- [Using two joysticks | 2 x servos per joystick](./JOYSTICK/robotic-arm-joystick.ino)
-- [Using four potentiometers | 1 x servo per potentiometer](./POTENTIOMETER/robotic-arm-potentiometer.ino)
+- [Using two joysticks | 2 x servos per joystick](./CODE/JOYSTICK/robotic-arm-joystick.ino)
+- [Using four potentiometers | 1 x servo per potentiometer](./CODE/POTENTIOMETER/robotic-arm-potentiometer.ino)
   
 ### Wiring diagram
 

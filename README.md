@@ -16,7 +16,7 @@ Control of a robotic arm (allowing four freedom degrees).
 <img src="PICTURES/joystick.jpg" width="100"/>
 - 1 x Protoboard
 <img src="PICTURES/protoboard.jpg" width="100"/>
-- 2 x 9V Battery
+- 2 x 9V Battery (1 x 9V battery per Arduino UNO; and 1 x 9V battery per servos)
 <img src="PICTURES/9v_battery.jpg" width="100"/>
 - 1 x Voltage regulator (Used to reduce the 9V battery to the 6V admitted by the SG90 Servo)
 <img src="PICTURES/voltage-regulator.jpg" width="100"/>
@@ -28,4 +28,5 @@ Control of a robotic arm (allowing four freedom degrees).
   
 ### Wiring diagram
 
-<img src="PICTURES/wiring-diagram.png" alt="Using four potentiometers" width="300"/>
+<img src="PICTURES/wiring-diagram-potentiometer.png" alt="Using four potentiometers" width="400"/>
+<img src="PICTURES/wiring-diagram-joystick.png" alt="Using two joysticks" width="400"/>

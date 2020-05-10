@@ -1,7 +1,7 @@
 /**
  * Robotic Arm using potentiometer by Jorge
  * 
- * Based on "How to Move Your Robot 4 Servos With Potentiometers" by Zenent Robotic
+ * Based on "How to Move Your 4 Servos Robot using Potentiometers?" by Zenent Robotic
  *
  */
 #include <Servo.h>

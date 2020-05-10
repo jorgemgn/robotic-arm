@@ -11,7 +11,7 @@ Control of a robotic arm (allowing four freedom degrees).
 - 1 x Servo SG90
 <img src="PICTURES/servo-sg90.jpg" width="100"/>
 - 4 x 10K potentiometer
-<img src="PICTURES/10kpotentiometer.jpg" width="100"/>
+<img src="PICTURES/10k-potentiometer.jpg" width="100"/>
 - 2 x Axes joystick
 <img src="PICTURES/joystick.jpg" width="100"/>
 - 1 x Protoboard

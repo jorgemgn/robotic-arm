@@ -16,6 +16,10 @@ Control of a robotic arm (allowing four freedom degrees).
 <img src="PICTURES/joystick.jpg" width="100"/>
 - 1 x Protoboard
 <img src="PICTURES/protoboard.jpg" width="100"/>
+- 2 x 9V Battery
+<img src="PICTURES/9v_battery.jpg" width="100"/>
+- 1 x Voltage regulator _(Used to reduce the 9V battery to the 6V admitted by the sg90 servo.)_
+<img src="PICTURES/voltage-regulator.jpg" width="100"/>
 
 ### Control modes
 

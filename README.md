@@ -2,6 +2,8 @@
 
 Control of a robotic arm (allowing four freedom degrees).
 
+![robotic-arm](robotic-arm.gif)
+
 ### Materials
 
 - 1 x Arduino UNO

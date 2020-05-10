@@ -28,5 +28,5 @@ Control of a robotic arm (allowing four freedom degrees).
   
 ### Wiring diagram
 
-<img src="PICTURES/wiring-diagram-potentiometer.png" alt="Using four potentiometers" width="400"/>
-<img src="PICTURES/wiring-diagram-joystick.png" alt="Using two joysticks" width="400"/>
+<img src="PICTURES/wiring-diagram-potentiometer.png" alt="Using four potentiometers" width="600"/>
+<img src="PICTURES/wiring-diagram-joystick.png" alt="Using two joysticks" width="600"/>

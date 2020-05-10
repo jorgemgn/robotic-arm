@@ -10,6 +10,13 @@
 #define ELBOW_POT 2   
 #define HAND_POT 3    
 
+// Scale bounding
+#define FROM_HIGH 1023
+#define FROM_LOW 0
+#define TO_LOW 0
+#define HAND_TO_LOW 110
+#define TO_HIGH 180
+
 // Servo pins
 #define BASE_PIN 2
 #define SHOULDER_PIN 2
@@ -17,10 +24,10 @@
 #define HAND_PIN 2
 
 // Potentiometer values
-int BASE_VAL;
-int SHOULDER_VAL; 
-int ELBOW_VAL; 
-int HAND_VAL;
+int base_val;
+int shoulder_val; 
+int elbow_val; 
+int hand_val;
 
 // Servos
 Servo BASE;
@@ -37,22 +44,22 @@ void setup () {
 
 void loop () {
   // Read potentiometers (range 0-1023)
-  BASE_VAL = analogRead(BASE_POT);
-  SHOULDER_VAL = analogRead(SHOULDER_POT);
-  ELBOW_VAL = analogRead(ELBOW_POT);
-  HAND_VAL = analogRead(HAND_POT);
+  base_val = analogRead(BASE_POT);
+  shoulder_val = analogRead(SHOULDER_POT);
+  elbow_val = analogRead(ELBOW_POT);
+  hand_val = analogRead(HAND_POT);
 
   // Scaling
-  BASE_VAL = map(BASE_VAL, 0 , 1023, 0, 180);
-  SHOULDER_VAL = map(SHOULDER_VAL, 0 , 1023, 0, 180);
-  ELBOW_VAL = map(ELBOW_VAL, 0 , 1023, 0, 180);
-  HAND_VAL = map(HAND_VAL, 0 , 1023, 110, 180);
+  base_val = map(base_val, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH);
+  shoulder_val = map(shoulder_val, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH);
+  elbow_val = map(elbow_val, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH);
+  hand_val = map(hand_val, FROM_LOW, FROM_HIGH, HAND_TO_LOW, TO_HIGH);
 
   // Send values to servos
-  BASE.write(BASE_VAL);
-  SHOULDER.write(SHOULDER_VAL);
-  ELBOW.write(ELBOW_VAL);
-  HAND.write(HAND_VAL);
+  BASE.write(base_val);
+  SHOULDER.write(shoulder_val);
+  ELBOW.write(elbow_val);
+  HAND.write(hand_val);
 
   delay(15);
 }

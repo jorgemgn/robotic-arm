@@ -51,30 +51,30 @@ void setup () {
   initServoPositions();
 
   // Base servo attach to PWM/digital pin 3
-  BASE.attach (BASE_PWM_PIN);    
+  BASE.attach(BASE_PWM_PIN);    
 
   // Shoulder servo attach to PWM/digital pin 4
-  SHOULDER.attach (SHOULDER_PWM_PIN);
+  SHOULDER.attach(SHOULDER_PWM_PIN);
 
   // Elbow servo attach to PWM/digital pin 5
-  ELBOW.attach (ELBOW_PWM_PIN);    
+  ELBOW.attach(ELBOW_PWM_PIN);    
 
   // Hand servo attach to PWM/digital pin 6
-  HAND.attach (HAND_PWM_PIN);     
+  HAND.attach(HAND_PWM_PIN);     
 }
 
 void loop () {
   // Joystick values (0-1023)
-  joyA_ReadX = analogRead (joyA_X); // X-axis reading from Base & Shoulder joystick
-  joyA_ReadY = analogRead (joyA_Y); // Y-axis reading from Base & Shoulder joystick
-  joyB_ReadX = analogRead (joyB_X); // X-axis reading from Elbow & Hand joystick
-  joyB_ReadY = analogRead (joyB_Y); // Y-axis reading from Elbow & Hand joystick
+  joyA_ReadX = analogRead(joyA_X); // X-axis reading from Base & Shoulder joystick
+  joyA_ReadY = analogRead(joyA_Y); // Y-axis reading from Base & Shoulder joystick
+  joyB_ReadX = analogRead(joyB_X); // X-axis reading from Elbow & Hand joystick
+  joyB_ReadY = analogRead(joyB_Y); // Y-axis reading from Elbow & Hand joystick
 
   // Scaling
-  joyA_ReadX = map (joyA_ReadX, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Base servo degrees
-  joyA_ReadY = map (joyA_ReadY, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Shoulder servo degrees
-  joyB_ReadX = map (joyB_ReadX, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Elbow servo degrees
-  joyB_ReadY = map (joyB_ReadY, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Hand servo degrees
+  joyA_ReadX = map(joyA_ReadX, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Base servo degrees
+  joyA_ReadY = map(joyA_ReadY, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Shoulder servo degrees
+  joyB_ReadX = map(joyB_ReadX, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Elbow servo degrees
+  joyB_ReadY = map(joyB_ReadY, FROM_LOW, FROM_HIGH, TO_LOW, TO_HIGH); // Hand servo degrees
 
   // Send calculated values to servos
   BASE.write(joyA_ReadX);     // Move base servo according to the analog reading

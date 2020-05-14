@@ -10,8 +10,8 @@ Control of a robotic arm (allowing three freedom degrees).
 
 ### Materials
 
-- 1 x Arduino UNO
-<img src="images/arduino-uno.jpg" width="100"/>  
+- 1 x Arduino UNO  
+  <img src="images/arduino-uno.jpg" width="100"/>  
 
 - 1 x Servo SG90  
   <img src="images/servo-sg90.jpg" width="100"/>

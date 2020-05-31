@@ -4,7 +4,7 @@
  */
 #include <Servo.h>
 
-// Pins
+// Analog pins
 #define JOYA_X A0 // Joystick A X-axis analog pin A0
 #define JOYA_Y A1 // Joystick A Y-axis analog pin A1
 #define JOYB_X A2 // Joystick B X-axis analog pin A2
@@ -17,10 +17,11 @@
 #define TO_HIGH 180
 
 // Servo PWM/digital pins
-#define BASE_PWM_PIN 3
-#define SHOULDER_PWM_PIN 4
+#define BASE_PWM_PIN 4
+#define SHOULDER_PWM_PIN 3
 #define ELBOW_PWM_PIN 5
 #define HAND_PWM_PIN 6
+#define CLAMP_PWM_PIN 7
 
 // Positions
 #define INIT_POSITION 0
@@ -40,6 +41,7 @@ Servo BASE;
 Servo SHOULDER;
 Servo ELBOW;
 Servo HAND;
+Servo CLAMP;
 
 // Set servos starting position
 void initServoPositions () {      
@@ -47,6 +49,7 @@ void initServoPositions () {
   SHOULDER.write(INIT_POSITION);
   ELBOW.write(INIT_POSITION);
   HAND.write(INIT_POSITION);
+  CLAMP.write(INIT_POSITION);
 }
 
 void setup () {
@@ -62,7 +65,10 @@ void setup () {
   ELBOW.attach(ELBOW_PWM_PIN);    
 
   // Hand servo attach to PWM/digital pin 6
-  HAND.attach(HAND_PWM_PIN);     
+  HAND.attach(HAND_PWM_PIN);   
+  
+  // CLAMP servo attach to PWM/digital pin 7
+  CLAMP.attach(CLAMP_PWM_PIN);   
 }
 
 void loop () {
@@ -82,21 +88,19 @@ void loop () {
   BASE.write(joyA_ReadX);     // Move base servo according to the analog reading
   SHOULDER.write(joyA_ReadY); // Move shoulder servo according to the analog reading
   ELBOW.write(joyB_ReadX);    // Move elbow servo according to the analog reading
+  HAND.write(joyB_ReadY);      // Move hand servo according to the analog reading
  
   // Clamp control
   JOYB_SW_state = digitalRead (JOYB_SW);                  // Move hand servo according to the Elbow & Hand joystick button reading
 
   if (JOYB_SW_state == HIGH) {
-
-    HAND.write (90);                                      // If button state is high, Hand servo turn 90 degrees
-
+    CLAMP.write (90);                                      // If button state is high, Hand servo turn 90 degrees
   }
   else {
-
-    HAND.write (0);                                       // If button state is low, Hand servo return to low position
-
+    CLAMP.write (0);                                       // If button state is low, Hand servo return to low position
   }  
 
   // keep the arm from moving abruptly
-  delay(15);
+  delay(150);
 }
+

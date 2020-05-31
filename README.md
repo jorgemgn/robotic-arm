@@ -1,6 +1,6 @@
 # Robotic Arm
 
-Control of a robotic arm (allowing three freedom degrees).
+Control of a robotic arm (allowing four freedom degrees).
 
 ![robotic-arm](images/robotic-arm.gif)
 

@@ -1,3 +1,5 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE.md)
+
 # Robotic Arm
 
 Control of a robotic arm (allowing four freedom degrees).

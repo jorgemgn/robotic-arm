@@ -10,6 +10,9 @@ Control of a robotic arm (allowing four freedom degrees).
 
 ![robotic-arm](images/robotic-arm.gif)
 
+### Author
+Jorge Miguel González Novez  |  _Technician in Electrotechnical and Automated Systems_
+
 ### A bit of theory
 
 - [Theory](THEORY.md)
@@ -49,3 +52,8 @@ Control of a robotic arm (allowing four freedom degrees).
 
 <img src="images/wiring-diagram-potentiometer.png" alt="Using four potentiometers" width="600"/>
 <img src="images/wiring-diagram-joystick.png" alt="Using two joysticks" width="600"/>
+
+### Liability
+
+**I am not responsible for the inappropriate use of the information shown here.  
+As well as for any accident caused by the incorrect use of the materials and/or tools.**   

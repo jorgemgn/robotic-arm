@@ -2,6 +2,8 @@
 
 <img src="images/license_cc_by-nc-nd.png" width="200"/>
 
+- [More info about CC license](./images/cc-license.png)
+
 # Robotic Arm
 
 Control of a robotic arm (allowing four freedom degrees).
